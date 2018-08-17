@@ -1,0 +1,70 @@
+.Header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.Header a#logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    display: block;
+    text-align: left;
+}
+
+.Header a#logo img {
+    width: 44px;
+}
+
+.Header ul {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    display: block;
+}
+
+.Header ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.Header ul li a {
+    text-decoration:none;
+}
+
+.Header button {
+    display: block;
+    margin-top: -20px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Header button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px); /*rotateY(30deg)*/
+}
+
+@media (max-width: 640px) {
+    .Header a#logo {
+        top: 20px;
+    }
+    .Header ul {
+        top: 15px;
+    }
+}
