@@ -23,8 +23,9 @@ button, a {
 
 .Hero .BackgroundMask {
   position: absolute;
+  top: -20px;
   width: 100%;
-  height: 780px;
+  height: 800px;
 }
 
 .Hero .Background {
