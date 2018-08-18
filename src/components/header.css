@@ -28,7 +28,7 @@ button {
 .Header ul {
     position: absolute;
     right: 10px;
-    top: 25px;
+    top: 20px;
     display: block;
 }
 
@@ -65,6 +65,6 @@ button {
         top: 20px;
     }
     .Header ul {
-        top: 15px;
+        top: 10px;
     }
 }

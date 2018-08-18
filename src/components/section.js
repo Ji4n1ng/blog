@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Paragraph from './paragraph'
+import { Parallax } from 'react-scroll-parallax';
 
 const SectionBase = styled.div`
     position: relative;
@@ -11,16 +12,6 @@ const BackgroundMask = styled.div`
     width: 100%;
     height: 600px;
     overflow: hidden;
-`
-
-const Background = styled.div`
-    position: absolute;
-    background: url(${props => props.image});
-    top: -100px;
-    width: 100%;
-    height: 900px;
-    background-size: cover;
-    background-position: center;
 `
 
 const SectionGroup = styled.div`
@@ -39,7 +30,11 @@ const Image = styled.img`
 
 const Section = props => (
     <SectionBase>
-        <BackgroundMask> <Background image={props.backgroundImage} style={props.backgroundStyle} /></BackgroundMask>
+        <BackgroundMask> 
+            <Parallax offsetYMax={20} offsetYMin={-20} slowerScrollRate>
+                <img src={props.backgroundImage}  height="700px"/>
+            </Parallax>    
+        </BackgroundMask>
         <SectionGroup style={props.titleStyle}>
             <Paragraph
                 title={props.title}

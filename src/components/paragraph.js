@@ -18,6 +18,11 @@ const Title = styled.h2`
         font-size: 40px;
         padding: 20px;
     }
+
+    @media (max-width: 400px) {
+        font-size: 35px;
+        padding: 20px;
+    }
 `
 
 const Text = styled.p`

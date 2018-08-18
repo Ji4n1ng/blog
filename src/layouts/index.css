@@ -16,18 +16,15 @@ button, a {
   overflow: hidden;
 }
 
-.Hero .background {
-  position: absolute;
-  background: url('../images/background1.jpg');
-  width: 100%;
-  height: 780px;
-  background-size: cover;
-  background-position: center;
-}
-
 .Hero .HeroGroup {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.Hero .background {
+  position: absolute;
+  width: 100%;
+  height: 780px;
 }
 
 .Hero .HeroGroup h1 {
@@ -99,7 +96,7 @@ button.puple {
 
 button.puple:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-  transform: translateY(-3px); /*rotateY(30deg)*/
+  transform: translateY(-3px);
 }
 
 .MiddleSection {
@@ -114,6 +111,10 @@ button.puple:hover {
   grid-template-columns: repeat(7, auto);
   grid-gap: 30px;
   justify-items: center;
+}
+
+.LogoGroup img {
+  height: 50px;
 }
 
 .Spacing {
@@ -140,6 +141,9 @@ button.puple:hover {
   }
   .LogoGroup {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .LogoGroup img {
+    height: 40px;
   }
 }
 

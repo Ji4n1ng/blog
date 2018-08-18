@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import Header from '../components/header'
 import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
+  <ParallaxProvider>
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
@@ -22,6 +24,7 @@ const Layout = ({ children, data }) => (
       contact@jianing.wang
     </Footer>
   </div>
+  </ParallaxProvider>
 )
 
 Layout.propTypes = {
