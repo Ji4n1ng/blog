@@ -7,18 +7,12 @@ import { Parallax } from 'react-scroll-parallax';
 class IndexPage extends React.Component {
 
   render() {
-    // var translateY = function (a, b) { return { transform: `translateY(${a * b}px)` } };
-    // const heroBackgroundStyle = translateY(this.state.heroYOffset, 0.23)
-    // const heroTitleStyle = translateY(this.state.heroYOffset, 0.2)
-    // const section1BackgroundStyle = translateY(this.state.section1YOffset, 0.23)
-    // const section2BackgroundStyle = translateY(this.state.section2YOffset, 0.23)
-
     return (
       <div className="Wrapper">
         <div className="Hero">
-          <div className="background">
+          <div className="BackgroundMask">
             <Parallax offsetYMax={20} offsetYMin={-20} slowerScrollRate>
-              <img src={require('../images/background1.jpg')} height="800px"/>
+              <div className="Background"/>
             </Parallax>
           </div>
           <div className="HeroGroup">

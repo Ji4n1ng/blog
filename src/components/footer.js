@@ -7,6 +7,7 @@ const FooterGroup = styled.div`
     display: grid;
     grid-gap: 20px;
 `
+
 const Title = styled.p`
     font-size: 24px;
     font-weight: 600;

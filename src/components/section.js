@@ -14,6 +14,15 @@ const BackgroundMask = styled.div`
     overflow: hidden;
 `
 
+const Background = styled.div`
+    background: url(${props => props.image});
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+`
+
+
 const SectionGroup = styled.div`
     position: relative;
     max-width: 1000px;
@@ -32,7 +41,7 @@ const Section = props => (
     <SectionBase>
         <BackgroundMask> 
             <Parallax offsetYMax={20} offsetYMin={-20} slowerScrollRate>
-                <img src={props.backgroundImage}  height="700px"/>
+                <Background image={props.backgroundImage} />
             </Parallax>    
         </BackgroundMask>
         <SectionGroup style={props.titleStyle}>
