@@ -55,7 +55,7 @@ class IndexPage extends React.Component {
           </div>
         </div>
         <Section 
-          title="Programming should start with design"
+          title="Programming from design"
           titleStyle={{color: 'white', textShadow: '0px 20px 40px #522E90'}}
           text="When I have any good ideas or thoughts in my mind, I am more used to opening Sketch instead of Xcode first. With the continuous design, the programming ideas have become clear gradually."
           textStyle={{color: 'white'}}
