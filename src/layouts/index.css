@@ -29,7 +29,7 @@ button, a {
 }
 
 .Hero .Background {
-  background: url('../images/background1.jpg');
+  background: url('http://peo14u1ao.bkt.clouddn.com/background1.jpg');
   width: 100%;
   height: 780px;
   background-size: cover;
