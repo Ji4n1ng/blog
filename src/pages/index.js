@@ -16,12 +16,16 @@ class IndexPage extends React.Component {
             </Parallax>
           </div>
           <div className="HeroGroup">
-            <h1>I constantly challenge<br/>myself to solve problems<br/><strong>from scratch.</strong></h1>
+            <div className="titleGroup">
+              <h1>I constantly challenge<br/>myself to solve problems<br/><strong>from scratch.</strong></h1>
+            </div>
+            <div className="hand">
+              <img className="hand" src="https://i.imgur.com/EsaxCv6.png"/>
+            </div>
           </div>
-          <img className="hand" src="http://peo14u1ao.bkt.clouddn.com/iphonex_hand.png"/>
         </div>
         <div className="Introduce">
-          <img src="http://peo14u1ao.bkt.clouddn.com/logo_purple.png"/>
+          <img src={require('../images/logo_purple.png')}/>
           <Paragraph
             title="Nice to meet you!"
             text={["Hi, I’m Jianing, a fan of Apple.",<br/>,
@@ -36,8 +40,8 @@ class IndexPage extends React.Component {
           titleStyle={{color: 'white', textShadow: '0px 20px 40px #613EF1'}}
           text="My programming career started with iOS development. The first thing I learned was the Swift language. I highly recommend you to use Swift as your first language."
           textStyle={{color: 'white'}}
-          backgroundImage="http://peo14u1ao.bkt.clouddn.com/background2.jpg"
-          image="http://peo14u1ao.bkt.clouddn.com/macbook.png" />
+          backgroundImage="https://i.imgur.com/WOtqKAe.jpg"
+          image="https://i.imgur.com/QQ1jr0i.png" />
         <div className="MiddleSection">
           <Paragraph
             title="Dedicated to becoming a T-type talent"
@@ -45,13 +49,13 @@ class IndexPage extends React.Component {
             titleStyle={{color: 'black'}}
             textStyle={{color: 'black'}} /> 
           <div className="LogoGroup">
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_swift.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_nodejs.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_sketch.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_reactivex.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_react.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_vapor.png" />
-            <img src="http://peo14u1ao.bkt.clouddn.com/logo_angular.png" />
+            <img src={require('../images/logo_swift.png')}/>
+            <img src={require('../images/logo_nodejs.png')}/>
+            <img src={require('../images/logo_sketch.png')}/>
+            <img src={require('../images/logo_reactivex.png')}/>
+            <img src={require('../images/logo_react.png')}/>
+            <img src={require('../images/logo_vapor.png')}/>
+            <img src={require('../images/logo_angular.png')}/>
           </div>
         </div>
         <Section 
@@ -59,8 +63,9 @@ class IndexPage extends React.Component {
           titleStyle={{color: 'white', textShadow: '0px 20px 40px #522E90'}}
           text="When I have any good ideas or thoughts in my mind, I am more used to opening Sketch instead of Xcode first. With the continuous design, the programming ideas have become clear gradually."
           textStyle={{color: 'white'}}
-          backgroundImage="http://peo14u1ao.bkt.clouddn.com/background3.jpg"
-          image="http://peo14u1ao.bkt.clouddn.com/imac.png" />
+          backgroundImage="https://i.imgur.com/nBea4Bs.jpg"
+          image="https://i.imgur.com/isyw1k2.png" />
+        <div className="Spacing" />
         <Paragraph
             title="If you are interested"
             text="You can read more articles from my blog."/> 

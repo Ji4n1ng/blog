@@ -19,6 +19,7 @@ button, a {
 .Hero .HeroGroup {
   max-width: 1000px;
   margin: 0 auto;
+  height: 700px;
 }
 
 .Hero .BackgroundMask {
@@ -29,7 +30,7 @@ button, a {
 }
 
 .Hero .Background {
-  background: url('http://peo14u1ao.bkt.clouddn.com/background1.jpg');
+  background: url('https://i.imgur.com/Goy2m6Y.jpg');
   width: 100%;
   height: 780px;
   background-size: cover;
@@ -59,6 +60,13 @@ button, a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 10px 20px rgba(39, 71, 169, 0.2);
+}
+
+.Hero .hand {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 1000px;
+  height: auto;
 }
 
 .Hero img.hand {
@@ -154,6 +162,24 @@ button.puple:hover {
   }
   .LogoGroup img {
     height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Hero .hand {
+    position: absolute;
+    width: 1000px;
+    height: 700px;
+    bottom: 0;
+  }
+
+  .Hero img.hand {
+    display: block;
+    position: relative;
+    right: -300px;
+    bottom: -230px;
+    width: 350px;
+    height: 483.28px;
   }
 }
 
