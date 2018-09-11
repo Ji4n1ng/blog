@@ -40,7 +40,7 @@ const Image = styled.img`
 const Section = props => (
     <SectionBase>
         <BackgroundMask> 
-            <Parallax offsetYMax={20} offsetYMin={-20} slowerScrollRate>
+            <Parallax offsetYMax={5} offsetYMin={-20} slowerScrollRate>
                 <Background image={props.backgroundImage} />
             </Parallax>    
         </BackgroundMask>

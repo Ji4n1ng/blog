@@ -56,7 +56,7 @@ const Footer = ({data, children}) => (
       <Title>You can contact me on Twitter @Ji4n1ng</Title>
       <Button><img src={require('../images/icon-twitter.svg')} width="20px"/>&nbsp;&nbsp;Twitter</Button>
       <Text>{children}</Text>
-      <Copyright>{data.site.siteMetadata.copyright}</Copyright>
+      <Copyright>All background images are from DesignCode. iOS app and this website are made entirely by @Ji4n1ng. © 2018</Copyright>
     </FooterGroup>
 )
 

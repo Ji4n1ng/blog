@@ -8,6 +8,7 @@ body {
 
 button, a {
   outline: 0;
+  text-decoration: none;
 }
 
 .Hero {
@@ -193,3 +194,9 @@ button.puple:hover {
     transform: translateY(0px);
   }
 }
+
+.Blog {
+  background-color: #EFF3F6;
+  padding-bottom: 100px;
+}
+
