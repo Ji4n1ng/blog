@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import BlogHeader from '../components/blog-header';
-import BlogCell from '../components/blog-cell';
+import BlogHeader from '../../components/blog-header';
+import BlogCell from '../../components/blog-cell';
 
 class Blog extends React.Component {
   render() {
@@ -16,6 +16,8 @@ class Blog extends React.Component {
           backgroundImage="https://i.imgur.com/Goy2m6Y.jpg" />
         { posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
+          console.log('fuck')
+          console.log(node.fields.slug)
           return (
             <div key={node.fields.slug}>
               <BlogCell

@@ -1,43 +1,49 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Parallax } from 'react-scroll-parallax';
 
 const BlogHeaderBase = styled.div`
-    position: relative;
-    height: 400px;
+    display: flex;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-`
-
-const BackgroundMask = styled.div`
-    position: absolute;
     width: 100%;
-    height: 400px;
+    background: url(${props => props.image});
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 `
 
-const Background = styled.div`
-    background: url(${props => props.image});
+const BlogHeaderGroup = styled.div`
+    display: flex;
+    align-items: flex-end;
     width: 100%;
-    height: 700px;
-    background-size: cover;
-    background-position: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 400px;
 `
 
-const BlogHeaderGroup = styled.div`
-    position: relative;
+const HeaderTitleGroup = styled.div`
+    width: 100%;
     max-width: 1000px;
-    margin: auto;
-    padding: 20px 20px 20px 20px;
+    margin: 0;
+    padding: 0px 20px 40px 20px;
+
+    @media (max-width: 400px) {
+        padding: 0 10px 40px 10px;
+    }
 `
 
 const Title = styled.p`
     display: block;
-    position: relative;
-    top: 100px;
     color: white;
     font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
     font-weight: 600;
     text-shadow: 0px 10px 20px #2747A9;
+    text-align: left;
+
+    @media (max-width: 640px) {
+        font-size: 45px;
+    }
 
     @media (max-width: 400px) {
         font-size: 40px;
@@ -45,28 +51,29 @@ const Title = styled.p`
 `
 
 const Subtitle = styled.p`
-    display: inline-block;
-    position: relative;
-    top: 50px;
+    display: block;
+    margin: 0;
     color: white;
     font-size: 28px;
     font-weight: 400;
     text-shadow: 0px 10px 20px #2747A9;
 
+    @media (max-width: 640px) {
+        font-size: 25px;
+    }
+
     @media (max-width: 400px) {
         font-size: 22px;
-        padding-top: 30px;
     }
 `
 
 const BlogHeader = props => (
-    <BlogHeaderBase>
-        <BackgroundMask> 
-                <Background image={props.backgroundImage} />
-        </BackgroundMask>
+    <BlogHeaderBase image={props.backgroundImage}>
         <BlogHeaderGroup>
-            <Title>{props.title}</Title>
-            <Subtitle>{props.subtitle}</Subtitle>
+            <HeaderTitleGroup>
+                <Title>{props.title}</Title>
+                <Subtitle>{props.subtitle}</Subtitle>
+            </HeaderTitleGroup>
         </BlogHeaderGroup>
     </BlogHeaderBase>
 )

@@ -10,7 +10,6 @@ const CellWrapper = styled.div`
     margin: 60px auto 0 auto;
     max-width: 1080px;
     align-items: stretch;
-    height: 350px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
