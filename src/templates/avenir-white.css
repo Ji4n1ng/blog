@@ -1,7 +1,7 @@
 .MarkDownWrapper {
 	font-family: "Avenir Next", Helvetica, Arial, sans-serif;
 	display: flex;
-	max-width: 1000px;
+	max-width: 960px;
 	margin: 20px auto;
 	padding: 10px 40px;
 }

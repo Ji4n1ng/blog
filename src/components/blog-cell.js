@@ -8,7 +8,7 @@ const CellWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: 60px auto 0 auto;
-    max-width: 1080px;
+    max-width: 1040px;
     align-items: stretch;
     border-radius: 10px;
     background-color: white;
@@ -22,7 +22,7 @@ const CellWrapper = styled.div`
 const CellTop = styled.div`
     display: flex;
     width: 100%;
-    max-width: 1080px;
+    max-width: 1040px;
     height: 250px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -35,7 +35,7 @@ const CellTop = styled.div`
 
 const CellTopGroup = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
 
@@ -45,7 +45,7 @@ const CellTopGroup = styled.div`
 `
 
 const CellBottom = styled.div`
-    max-width: 1000px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0px 20px 20px 20px;
 
@@ -61,7 +61,7 @@ const Title = styled.p`
     font-size: 32px;
     font-weight: 500;
     text-align: left;
-    text-shadow: 0px 10px 20px #2747A9;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
     padding-bottom: 10px;
 
     @media (max-width: 640px) {
@@ -80,7 +80,7 @@ const Subtitle = styled.p`
     font-size: 24px;
     font-weight: 400;
     text-align: left;
-    text-shadow: 0px 10px 20px #2747A9;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
 
     @media (max-width: 640px) {
         font-size: 20px;
@@ -117,7 +117,6 @@ const BlogCell = props => (
                     <Title>{props.title}</Title>
                     <Subtitle>{props.subtitle}</Subtitle>
                 </CellTopGroup>
-
             </CellTop>
         </Link>
         <CellBottom>

@@ -38,7 +38,7 @@ const Title = styled.p`
     margin: 0;
     padding-bottom: 20px;
     font-weight: 600;
-    text-shadow: 0px 10px 20px #2747A9;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
     text-align: left;
 
     @media (max-width: 640px) {
@@ -56,7 +56,7 @@ const Subtitle = styled.p`
     color: white;
     font-size: 28px;
     font-weight: 400;
-    text-shadow: 0px 10px 20px #2747A9;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
 
     @media (max-width: 640px) {
         font-size: 25px;

@@ -16,8 +16,6 @@ class Blog extends React.Component {
           backgroundImage="https://i.imgur.com/Goy2m6Y.jpg" />
         { posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
-          console.log('fuck')
-          console.log(node.fields.slug)
           return (
             <div key={node.fields.slug}>
               <BlogCell

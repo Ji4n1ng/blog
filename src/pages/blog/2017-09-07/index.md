@@ -2,7 +2,12 @@
 title: iOS 单向数据流架构之 ReSwift-RxSwift-Login-Example
 date: 2017-09-07 12:00:00
 categories: iOS
-background: https://i.imgur.com/Goy2m6Y.jpg
+background: https://i.imgur.com/zbQfLI1.jpg
+tags:
+    - ReSwift
+    - RxSwift
+    - iOS
+    - Swift
 ---
 
 ## 前言
@@ -17,7 +22,7 @@ background: https://i.imgur.com/Goy2m6Y.jpg
 
 先来看一下效果图:
 
-![blog-cp-02](http://on74pxnsk.bkt.clouddn.com/blog-cp-02.gif)
+![Imgur](https://i.imgur.com/AdvlFjT.gif)
 
 ### State
 
@@ -144,17 +149,17 @@ ReSwift 已经决定了整个应用数据流向, RxSwift 肯定不能越俎代�
 举个例子, 让 Rx 代替了代理的作用. 比如, 我要实时监控两个 TextField 的输入, 来做实时表单验证, 通常使用 `UITextFieldDelegate` 来做实时获取用户输入, 我让 Rx 代替了它. 
 
 ```swift
-        let _ = Observable.combineLatest(phoneValue.asObservable(), passwordValue.asObservable())
-            .observeOn(MainScheduler.asyncInstance)
-            .subscribe(onNext: {
-                store.dispatch(
-                    InputLoginInfo(
-                        phoneInput: $0,
-                        passwordInput: $1
-                    )
-                )
-            })
-            .disposed(by: disposeBag)
+let _ = Observable.combineLatest(phoneValue.asObservable(), passwordValue.asObservable())
+    .observeOn(MainScheduler.asyncInstance)
+    .subscribe(onNext: {
+        store.dispatch(
+            InputLoginInfo(
+                phoneInput: $0,
+                passwordInput: $1
+            )
+        )
+    })
+    .disposed(by: disposeBag)
 ```
 
 比用代理来做优雅简洁.
@@ -162,11 +167,11 @@ ReSwift 已经决定了整个应用数据流向, RxSwift 肯定不能越俎代�
 所以, 使用 Rx 的时候, 截止到 store 分发哪一个 action 这一步骤就行了, 不能再往下做了, 剩下的数据流方向是 Re 的任务.
 
 ```swift
-        loginButton.rx.tap
-            .subscribe(onNext: {
-                store.dispatch(authenticateUser)
-            })
-            .disposed(by: disposeBag)
+loginButton.rx.tap
+    .subscribe(onNext: {
+        store.dispatch(authenticateUser)
+    })
+    .disposed(by: disposeBag)
 ```
 
 ## 最后

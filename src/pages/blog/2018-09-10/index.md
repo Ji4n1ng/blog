@@ -2,7 +2,9 @@
 title: 树莓派 + OpenWrt 打造无线路由科学上网
 date: 2018-09-10 20:00:00
 categories: Tips
-background: https://i.imgur.com/WOtqKAe.jpg
+background: https://i.imgur.com/tkBaQUD.jpg
+tags:
+    - Raspberry
 ---
 
 ## 前言
@@ -29,7 +31,7 @@ background: https://i.imgur.com/WOtqKAe.jpg
 
 下面我们将开始动手实现这一过程。首先将下载的 LEDE 镜像用 Etcher 写入 SD 卡中。
 
-![blog-ro-01](http://on74pxnsk.bkt.clouddn.com/blog-ro-01.png)
+![Imgur](https://i.imgur.com/aRWDmAN.png)
 
 ## 设置路由器
 
@@ -39,7 +41,7 @@ background: https://i.imgur.com/WOtqKAe.jpg
 
 点击 Network -> Wireless 把无线网络功能激活。
 
-![blog-ro-02](http://on74pxnsk.bkt.clouddn.com/blog-ro-02.png)
+![Imgur](https://i.imgur.com/oAhv2SL.png)
 
 点击 Edit，可以设置无线网的名称和密码等。
 
@@ -47,7 +49,7 @@ background: https://i.imgur.com/WOtqKAe.jpg
 
 点击 Network -> Interfaces -> Add new Interface。名称填 WAN，协议按照你的宽带联网方式来，因为我在学校 DHCP 动态分配 IP，所以我用 DHCP，如果你是拨号上网，就选择 PPPoE 然后填写宽带商提供的账号密码即可。保存应用即可。
 
-![blog-ro-03](http://on74pxnsk.bkt.clouddn.com/blog-ro-03.png)
+![Imgur](https://i.imgur.com/MYEtI8o.png)
 
 ### 将物理网口修改为 WAN 口
 
@@ -57,7 +59,7 @@ background: https://i.imgur.com/WOtqKAe.jpg
 $ vi /etc/config/network
 ```
 
-![blog-ro-04](http://on74pxnsk.bkt.clouddn.com/blog-ro-04.png)
+![Imgur](https://i.imgur.com/JCtrb5B.png)
 
 将 lan 配置下的 option ifname 'eth0' 注释掉即可。
 
@@ -100,3 +102,4 @@ $ opkg install xxx.ipk
 > [Vedio Talk](https://www.youtube.com/watch?v=QSuxEax-GAc)
 >
 > [飞羽博客](https://cokebar.info/archives/664)
+
