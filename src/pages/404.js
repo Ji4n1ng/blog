@@ -92,7 +92,7 @@ const NotFoundPage = () => (
       <TitleGroup>
         <Title>NOT FOUND</Title>
         <Subtitle>You just hit a route that doesn&#39;t exist... the sadness.</Subtitle>
-        <Link to="/blog"><Button>Back to Home</Button></Link>
+        <Link to="/"><Button>Back to Home</Button></Link>
       </TitleGroup>
     </NotFoundBody>
   </div>
