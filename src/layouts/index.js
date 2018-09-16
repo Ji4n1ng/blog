@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import get from 'lodash/get'
 
 import Header from '../components/header'
 import Footer from '../components/footer'

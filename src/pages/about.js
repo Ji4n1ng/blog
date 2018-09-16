@@ -1,13 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import BlogHeader from '../components/blog-header';
+import BlogHeader from '../components/blog-header'
 import '../templates/blog-post.css'
 
 class AboutPage extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
     return (
       <div className="About">
         <BlogHeader

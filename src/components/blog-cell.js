@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Parallax } from 'react-scroll-parallax';
-// import './blog-cell.css'
 
 const CellWrapper = styled.div`
     display: flex;
