@@ -95,7 +95,7 @@ const Text = styled.p`
     display: block;
     margin: 0;
     color: #272727;
-    font-size: 18px;
+    font-size: 16px;
     padding-top: 30px;
     text-align: left;
     font-weight: 400;

@@ -33,7 +33,7 @@ class IndexPage extends React.Component {
             titleStyle={{color: 'black'}}
             textStyle={{color: 'black'}} /> 
           <p className="email">You can contact me by email</p>
-          <button className="puple">contact@jianing.wang</button>
+          <a href="mailto:contact@jianing.wang"><button className="puple">contact@jianing.wang</button></a>
         </div>
         <Section 
           title="Starting with iOS development"
@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
         <Paragraph
             title="If you are interested"
             text="You can read more articles from my blog."/> 
-        <button className="puple">View Blog</button>
+        <Link to="/blog"><button className="puple">View Blog</button></Link>
         <div className="Spacing"/>
       </div>
     )
