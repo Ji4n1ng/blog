@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 Http Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能科学上网的路由器就成了激活这半块砖的关键道具。
+为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 åHttp Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能科学上网的路由器就成了激活这半块砖的关键道具。
 
 ## 准备
 
@@ -81,6 +81,48 @@ $ opkg udpate
 
 在 LEDE 中，你安装的软件总是两个，一个 xxx.ipk，一个形如 luci-app-xxx.ipk，前者相当于后台，提供具体的功能，后者相当于前端，方便我们通过 LEDE 管理页面来设置。
 
+### 方法一 添加作者源
+
+根据 http://openwrt-dist.sourceforge.net/ 里的说明，
+
+将 `openwrt-dist.pub` 添加到 opkg
+
+```
+wget http://openwrt-dist.sourceforge.net/openwrt-dist.pub
+opkg-key add openwrt-dist.pub
+```
+
+查询自己的 CPU 架构，
+
+```
+opkg print-architecture | awk '{print $2}'
+```
+
+将下面的两行添加到 `/etc/opkg/customfeeds.conf`，并替换 `{architecture}`
+
+```
+src/gz openwrt_dist http://openwrt-dist.sourceforge.net/packages/base/{architecture}
+src/gz openwrt_dist_luci http://openwrt-dist.sourceforge.net/packages/luci
+```
+
+根据需求可选择下列软件安装，
+
+```
+opkg install ChinaDNS
+opkg install luci-app-chinadns
+opkg install dns-forwarder
+opkg install luci-app-dns-forwarder
+opkg install shadowsocks-libev
+opkg install luci-app-shadowsocks
+opkg install simple-obfs
+opkg install ShadowVPN
+opkg install luci-app-shadowvpn
+```
+
+除了使用命令，也可以在 LUCI 页面中安装。
+
+### 方法二 通过 scp 手动上传 
+
 我们所需要的科学上网软件和后面所提到的 DNS 软件等，都是由 [aa65535](https://github.com/aa65535) 大佬提供的。
 
 这里将使用 scp 命令将 $$ 软件上传到树莓派。执行以下命令来安装。
@@ -93,7 +135,7 @@ $ opkg install xxx.ipk
 
 ## 树莓派 DNS 设置
 
-如果你现在可以科学上网了，恭喜你。如果没有，说明可能存在 DNS 污染等问题，你完成的工作只有一半。具体的 DNS 设置请参考 [飞羽博客](https://cokebar.info/archives/664)，写的非常详细，我也不再照搬一遍了。
+如果你现在可以科学上网了，恭喜你。如果没有，说明可能存在 DNS 污染等问题，你完成的工作只有一半。具体的 DNS 设置请参考 [飞羽博客](https://cokebar.info/archives/664) DNS 配置部分，写的非常详细，我也不再照搬一遍了。
 
 
 
