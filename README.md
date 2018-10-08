@@ -1,34 +1,44 @@
 # Jianing's blog
 
-This is Jianing's blog powered by Gatsby.
+This is [Jianing's blog](https://jianing.wang) powered by [Gatsby](https://www.gatsbyjs.org). Thanks to [DesignCode](https://designcode.io) and [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog). 
+
+## Glance
+
+![1](glance1.png)
+
+![2](glance2.png)
 
 ## Quick start
 
-1.  **Install the Gatsby CLI.**
+```sh
+# install the Gatsby CLI globally
+npm install -g gatsby-cli
+git clone https://github.com/Ji4n1ng/blog.git
+cd blog/
+gatsby develop
+```
 
-    ```sh
-    # install the Gatsby CLI globally
-    npm install -g gatsby-cli
-    ```
+The site is now running at `http://localhost:8000`.
 
-2.  **Start developing.**
+## Todo
 
-    Navigate into your new site’s directory and start it up.
+Because the construction of this site is still not completed, there will be some strange problems, such as mixed Chinese and English, no pagination. So the experience is not friendly. Features such as multi-language support and paging will be updated in the future, but it should not be in the short term.
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-3.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-    
-    *Note: You'll also see a second link: `http://localhost:8000___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://next.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
-    
-    Open the the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
+- Pagination
+- Multi-language Support
 
 ## Deploy
 
+This site has been deployed to Netlify.
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## Who do I talk to?
+
+If you have any questions, you can contact the following person,
+
+- Repo owner contact@jianing.wang
+
+## License
+
+This project is released under an MIT license. See LICENSE for details.
