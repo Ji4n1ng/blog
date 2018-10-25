@@ -2,7 +2,19 @@
 	display: flex;
 	max-width: 960px;
 	margin: 20px auto;
-	padding: 20px 40px 40px 40px;
+  padding: 20px 40px 40px 40px;
+}
+
+@media (max-width: 640px) {
+  .MarkDownWrapper {
+    padding: 20px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MarkDownWrapper {
+    padding: 20px 15px 40px 15px;
+  }
 }
 
 @font-face {
@@ -11,6 +23,7 @@
 }
 
 .markdown-body {
+  width: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
