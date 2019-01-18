@@ -23,7 +23,7 @@ class LeetCodePage extends React.Component {
             <p>Solution 的开源地址：</p>
             <ul>
               <li>Jianing：<a href="https://github.com/Ji4n1ng/my-leetcode-solutions">https://github.com/Ji4n1ng/my-leetcode-solutions</a></li>
-              <li>Yao：请尽快提交至 GitHub</li>
+              <li>Yao：<a href="https://github.com/Sixdes/LeetCode-solution">https://github.com/Sixdes/LeetCode-solution</a></li>
             </ul>
             <h2><a id="_9"></a>统计</h2>
             <table class="table table-striped table-bordered">
@@ -46,7 +46,7 @@ class LeetCodePage extends React.Component {
                   <td>2019.01.16-17</td>
                   <td>√</td>
                   <td>√</td>
-                  <td>X</td>
+                  <td>√</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/rotate-image/">48</a></td>
