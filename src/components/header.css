@@ -68,3 +68,9 @@ button {
         top: 10px;
     }
 }
+
+@media (max-width: 480px) {
+    .Header ul {
+        left: 20px;
+    }
+}
