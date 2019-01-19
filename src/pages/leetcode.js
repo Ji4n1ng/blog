@@ -53,6 +53,33 @@ class LeetCodePage extends React.Component {
                   <td>Rotate Image</td>
                   <td>Medium</td>
                   <td>2019.01.18-19</td>
+                  <td>√</td>
+                  <td>√</td>
+                  <td>√</td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/plus-one/">66</a></td>
+                  <td>Plus One</td>
+                  <td>Easy</td>
+                  <td>2019.01.20-21</td>
+                  <td> </td>
+                  <td>√</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/climbing-stairs/">70</a></td>
+                  <td>Climbing Stairs</td>
+                  <td>Easy</td>
+                  <td>2019.01.22-23</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/set-matrix-zeroes/">73</a></td>
+                  <td>Set Matrix Zeroes</td>
+                  <td>Medium</td>
+                  <td>2019.01.24-25</td>
                   <td> </td>
                   <td> </td>
                   <td> </td>
