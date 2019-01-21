@@ -17,8 +17,7 @@ class LeetCodePage extends React.Component {
             <ul>
               <li>每两天一道</li>
               <li>题解提交到 GitHub，如有必要，请在代码中添加注释</li>
-              <li>每道题必须相互 Review（在 GitHub 上进行 Review）</li>
-              <li>刷题情况记录在此网站</li>
+              <li>刷题情况记录在此网站，同时记录算法性能得分</li>
             </ul>
             <p>Solution 的开源地址：</p>
             <ul>
@@ -35,7 +34,6 @@ class LeetCodePage extends React.Component {
                   <th>Time</th>
                   <th>Yao</th>
                   <th>Jianing</th>
-                  <th>Review</th>
                 </tr>
               </thead>
               <tbody>
@@ -44,27 +42,24 @@ class LeetCodePage extends React.Component {
                   <td>Trapping Rain Water</td>
                   <td>Hard</td>
                   <td>2019.01.16-17</td>
-                  <td>√</td>
-                  <td>√</td>
-                  <td>√</td>
+                  <td>√ 0.91</td>
+                  <td>√ 0.97</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/rotate-image/">48</a></td>
                   <td>Rotate Image</td>
                   <td>Medium</td>
                   <td>2019.01.18-19</td>
-                  <td>√</td>
-                  <td>√</td>
-                  <td>√</td>
+                  <td>√ 98.95</td>
+                  <td>√ 15.91</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/plus-one/">66</a></td>
                   <td>Plus One</td>
                   <td>Easy</td>
                   <td>2019.01.20-21</td>
-                  <td> </td>
-                  <td>√</td>
-                  <td> </td>
+                  <td>√ 100</td>
+                  <td>√ 93.51</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/climbing-stairs/">70</a></td>
@@ -73,14 +68,12 @@ class LeetCodePage extends React.Component {
                   <td>2019.01.22-23</td>
                   <td> </td>
                   <td> </td>
-                  <td> </td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/set-matrix-zeroes/">73</a></td>
                   <td>Set Matrix Zeroes</td>
                   <td>Medium</td>
                   <td>2019.01.24-25</td>
-                  <td> </td>
                   <td> </td>
                   <td> </td>
                 </tr>
