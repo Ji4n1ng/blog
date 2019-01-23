@@ -66,8 +66,8 @@ class LeetCodePage extends React.Component {
                   <td>Climbing Stairs</td>
                   <td>Easy</td>
                   <td>2019.01.22-23</td>
-                  <td> </td>
-                  <td> </td>
+                  <td>√ 100</td>
+                  <td>√ 100</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/set-matrix-zeroes/">73</a></td>
@@ -77,12 +77,42 @@ class LeetCodePage extends React.Component {
                   <td> </td>
                   <td> </td>
                 </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/gas-station/">134</a></td>
+                  <td>Gas Station</td>
+                  <td>Medium</td>
+                  <td>2019.01.26-27</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/candy/">135</a></td>
+                  <td>Candy</td>
+                  <td>Hard</td>
+                  <td>2019.01.28-29</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/single-number/">136</a></td>
+                  <td>Single Number</td>
+                  <td>Easy</td>
+                  <td>2019.01.30-31</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/single-number-ii/">137</a></td>
+                  <td>Single Number II</td>
+                  <td>Medium</td>
+                  <td>2019.02.01-02</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
               </tbody>
             </table>
-
           </div>
         </div>
-
       </div>
     )
   }
