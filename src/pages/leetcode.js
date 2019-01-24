@@ -75,7 +75,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.01.24-25</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 99.97</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/gas-station/">134</a></td>
