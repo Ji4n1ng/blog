@@ -74,7 +74,7 @@ class LeetCodePage extends React.Component {
                   <td>Set Matrix Zeroes</td>
                   <td>Medium</td>
                   <td>2019.01.24-25</td>
-                  <td> </td>
+                  <td>√ 99.97</td>
                   <td>√ 99.97</td>
                 </tr>
                 <tr>
@@ -83,7 +83,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.01.26-27</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 5.23</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/candy/">135</a></td>
@@ -91,7 +91,7 @@ class LeetCodePage extends React.Component {
                   <td>Hard</td>
                   <td>2019.01.28-29</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 3.71</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/single-number/">136</a></td>
