@@ -99,13 +99,85 @@ class LeetCodePage extends React.Component {
                   <td>Easy</td>
                   <td>2019.01.30-31</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 39.39</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/single-number-ii/">137</a></td>
                   <td>Single Number II</td>
                   <td>Medium</td>
                   <td>2019.02.01-02</td>
+                  <td> </td>
+                  <td>√ 83.72</td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/add-two-numbers/">2</a></td>
+                  <td>Add Two Numbers</td>
+                  <td>Medium</td>
+                  <td>2019.02.03-04</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/reverse-linked-list-ii/">92</a></td>
+                  <td>Reverse Linked List II</td>
+                  <td>Medium</td>
+                  <td>2019.02.05-06</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/partition-list/">86</a></td>
+                  <td>Partition List</td>
+                  <td>Medium</td>
+                  <td>2019.02.07-08</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">83</a></td>
+                  <td>Remove Duplicates from Sorted List</td>
+                  <td>Easy</td>
+                  <td>2019.02.09-10</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/">82</a></td>
+                  <td>Single Number II</td>
+                  <td>Medium</td>
+                  <td>2019.02.11-12</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/rotate-list/">61</a></td>
+                  <td>Rotate List</td>
+                  <td>Medium</td>
+                  <td>2019.02.13-14</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">19</a></td>
+                  <td>Remove Nth Node From End of List</td>
+                  <td>Medium</td>
+                  <td>2019.02.15-16</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/swap-nodes-in-pairs/">24</a></td>
+                  <td>Swap Nodes in Pairs</td>
+                  <td>Medium</td>
+                  <td>2019.02.17-18</td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td><a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">25</a></td>
+                  <td>Reverse Nodes in k-Group</td>
+                  <td>Hard</td>
+                  <td>2019.02.19-20</td>
                   <td> </td>
                   <td> </td>
                 </tr>
