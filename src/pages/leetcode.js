@@ -90,7 +90,7 @@ class LeetCodePage extends React.Component {
                   <td>Candy</td>
                   <td>Hard</td>
                   <td>2019.01.28-29</td>
-                  <td> </td>
+                  <td>√ 5.77</td>
                   <td>√ 3.71</td>
                 </tr>
                 <tr>
