@@ -115,7 +115,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.02.03-04</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 91.30</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/reverse-linked-list-ii/">92</a></td>
