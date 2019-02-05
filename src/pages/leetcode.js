@@ -123,7 +123,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.02.05-06</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 100</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/partition-list/">86</a></td>
