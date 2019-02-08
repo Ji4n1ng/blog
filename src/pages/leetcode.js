@@ -139,7 +139,7 @@ class LeetCodePage extends React.Component {
                   <td>Easy</td>
                   <td>2019.02.09-10</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 16.61</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/">82</a></td>
@@ -147,7 +147,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.02.11-12</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 12.08</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/rotate-list/">61</a></td>
