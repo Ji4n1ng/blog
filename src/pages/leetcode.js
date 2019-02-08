@@ -131,7 +131,7 @@ class LeetCodePage extends React.Component {
                   <td>Medium</td>
                   <td>2019.02.07-08</td>
                   <td> </td>
-                  <td> </td>
+                  <td>√ 29.14</td>
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">83</a></td>
@@ -143,7 +143,7 @@ class LeetCodePage extends React.Component {
                 </tr>
                 <tr>
                   <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/">82</a></td>
-                  <td>Single Number II</td>
+                  <td>Remove Duplicates from Sorted List II</td>
                   <td>Medium</td>
                   <td>2019.02.11-12</td>
                   <td> </td>
