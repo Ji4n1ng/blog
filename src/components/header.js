@@ -8,7 +8,6 @@ const Header = ({ siteTitle }) => (
     <ul>
       <li><Link to="/"><button>Home</button></Link></li>
       <li><Link to="/about"><button>About</button></Link></li>
-      <li><Link to="/leetcode"><button>LeetCode</button></Link></li>
       <li><Link to="/blog"><button>Blog</button></Link></li>
     </ul>
   </div>
