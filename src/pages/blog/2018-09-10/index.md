@@ -13,7 +13,14 @@ tags:
 
 <!--more-->
 
-为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 åHttp Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能科学上网的路由器就成了激活这半块砖的关键道具。
+为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 Http Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能科学上网的路由器就成了激活这半块砖的关键道具。
+
+> 后记：Google 回应已经解决了。大概是这么个流程，
+> - 普通用户（我）：你的 X 有 BUG。
+> - Google：我知道了，开发团队正在解决。
+> - 然后半年过去没有回应。
+> - 高玩：我也遇到了，这个大概是 Y 原因，需要更改 Z 代码。
+> - 四天后，Google：已解决。
 
 ## 准备
 
