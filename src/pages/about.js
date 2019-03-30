@@ -56,6 +56,8 @@ class AboutPage extends React.Component {
 
             <p>因为本站建设仍未完成，会有些奇奇怪怪的问题，比如中英文混杂、没有分页等，所以体验并不友好。多语言支持、分页等特性会在后续更新，但是短期应该不会，因为我最近要做一些其他的事，见谅。</p>
 
+            <p>项目开源地址： <a href="https://github.com/Ji4n1ng/blog">https://github.com/Ji4n1ng/blog </a> </p>
+
             <p>Jianing </p>
 
             <p>2018.09.16</p>
