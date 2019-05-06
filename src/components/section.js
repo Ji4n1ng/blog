@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Paragraph from './paragraph'
-import { Parallax } from 'react-scroll-parallax';
 
 const SectionBase = styled.div`
     position: relative;
@@ -40,17 +39,14 @@ const Image = styled.img`
 const Section = props => (
     <SectionBase>
         <BackgroundMask> 
-            <Parallax offsetYMax={5} offsetYMin={-20} slowerScrollRate>
-                <Background image={props.backgroundImage} />
-            </Parallax>    
+            <Background image={props.backgroundImage} />
         </BackgroundMask>
         <SectionGroup style={props.titleStyle}>
             <Paragraph
                 title={props.title}
                 titleStyle={props.titleStyle}
                 text={props.text}
-                textStyle={props.textStyle}
-                textStyle={{color: 'white'}} />
+                textStyle={props.textStyle} />
             <Image src={props.image}/>
         </SectionGroup>
     </SectionBase>

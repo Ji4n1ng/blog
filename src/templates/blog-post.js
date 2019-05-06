@@ -1,17 +1,20 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import BlogHeader from '../components/blog-header';
 import './blog-post.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+      <Layout>
+        <SEO
+          title={post.frontmatter.title}
+          description={post.frontmatter.description || post.excerpt}
+        />
         <BlogHeader
           title={post.frontmatter.title}
           subtitle={post.frontmatter.date}
@@ -19,8 +22,7 @@ class BlogPostTemplate extends React.Component {
         <div className='MarkDownWrapper'>
             <div className='markdown-body' dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
-        
-      </div>
+      </Layout>
     )
   }
 }
@@ -29,13 +31,9 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt(pruneLength: 160)
       html
       frontmatter {
         title

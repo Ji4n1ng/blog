@@ -15,6 +15,7 @@ This is [Jianing's blog](https://jianing.wang) powered by [Gatsby](https://www.g
 npm install -g gatsby-cli
 git clone https://github.com/Ji4n1ng/blog.git
 cd blog/
+npm install
 gatsby develop
 ```
 

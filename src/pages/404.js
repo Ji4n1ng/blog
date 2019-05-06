@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react"
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import BlogHeader from '../components/blog-header'
 
 const NotFoundBody = styled.div`
@@ -82,20 +84,25 @@ const Button = styled.button`
     }
 `
 
-const NotFoundPage = () => (
-  <div>
-    <BlogHeader
-      title="Jianing's Blog"
-      subtitle="404 NOT FOUND"
-      backgroundImage="https://i.imgur.com/Goy2m6Y.jpg" />
-    <NotFoundBody>
-      <TitleGroup>
-        <Title>NOT FOUND</Title>
-        <Subtitle>You just hit a route that doesn&#39;t exist... the sadness.</Subtitle>
-        <Link to="/"><Button>Back to Home</Button></Link>
-      </TitleGroup>
-    </NotFoundBody>
-  </div>
-)
+class NotFoundPage extends React.Component {
+  render() {
+    return (
+      <Layout>
+        <SEO title="404 Not Found" />
+        <BlogHeader
+          title="Jianing's Blog"
+          subtitle="404 Not Found"
+          backgroundImage="https://s2.ax1x.com/2019/04/23/EEJiqI.jpg" />
+        <NotFoundBody>
+          <TitleGroup>
+            <Title>Not Found</Title>
+            <Subtitle>You just hit a route that doesn&#39;t exist... the sadness.</Subtitle>
+            <Link to="/"><Button>Back to Home</Button></Link>
+          </TitleGroup>
+        </NotFoundBody>
+      </Layout>
+    )
+  }
+}
 
 export default NotFoundPage

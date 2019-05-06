@@ -87,9 +87,9 @@ const Copyright = styled.div`
 const Footer = ({data, children}) => (
     <FooterGroup>
       <Title>You can contact me on Twitter @Ji4n1ng</Title>
-      <a style={{margin: '0 auto'}} className="" href="http://www.twitter.com/ji4n1ng/"><Button><img src={require('../images/icon-twitter.svg')} width="20px"/>&nbsp;&nbsp;Twitter</Button></a>
+      <a style={{margin: '0 auto'}} className="" href="http://www.twitter.com/ji4n1ng/"><Button><img alt="twitter" src={require('../../content/assets/icon-twitter.svg')} width="20px"/>&nbsp;&nbsp;Twitter</Button></a>
       <Text>{children}</Text>
-      <Copyright>All background images are from DesignCode. iOS app and this website are made entirely by @Ji4n1ng. © 2018</Copyright>
+      <Copyright>All background images are from DesignCode. iOS app and this website are made entirely by @Ji4n1ng. © 2019</Copyright>
     </FooterGroup>
 )
 
