@@ -1,12 +1,14 @@
 ---
 title: iOS 利用 OpenCV 实时识别手指
 date: 2016-11-14 12:00:00
-categories: iOS
+template: post
+draft: false
+slug: "/posts/opencv-fingertip/"
 background: https://s2.ax1x.com/2019/04/23/EEGo24.jpg
+category: "Development"
 tags:
-    - OpenCV
-    - iOS
-    - Algorithm
+   - "OpenCV"
+   - "iOS"
 ---
 
 > 2017-8-31更新
@@ -17,7 +19,7 @@ tags:
 
 ## 前言
 
-利用 OpenCV 在 iOS 设备上利用摄像头, 实时识别手指个数. 
+利用 OpenCV 在 iOS 设备上实时识别手指个数。
 
 <!--more-->
 

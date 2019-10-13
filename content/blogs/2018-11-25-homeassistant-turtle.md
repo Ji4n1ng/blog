@@ -1,11 +1,14 @@
 ---
 title: HomeAssistant 科学养龟指北
 date: 2018-11-25 08:00:00
-categories: Tips
-background: https://s2.ax1x.com/2019/04/23/EEG058.jpg
+template: post
+draft: false
+slug: "/posts/homeassistant-turtle/"
+category: "Tips"
 tags:
-    - Raspberry
-    - HomeAssistant
+   - "Raspberry"
+   - "HomeAssistant"
+background: https://s2.ax1x.com/2019/04/23/EEG058.jpg
 ---
 
 ## 前言

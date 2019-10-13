@@ -1,10 +1,13 @@
 ---
 title: 利用 Automator 将 PPT / Word 批量转换为 PDF
 date: 2018-07-27 20:00:00
-categories: Tips
-background: https://s2.ax1x.com/2019/04/23/EEGwUf.jpg
+template: post
+draft: false
+slug: "/posts/automator-convert-ppt-to-pdf/"
+category: "Tips"
 tags:
-    - Automator
+   - Automator
+background: https://s2.ax1x.com/2019/04/23/EEGwUf.jpg
 ---
 
 ## 前言
@@ -131,7 +134,5 @@ on run {input, parameters}
     
 end run
 ```
-
-> 最后，如果对 Workflow 感兴趣，可以看我另一篇[博客](http://www.jianing.wang/2017/03/09/Workflow%E5%88%9D%E8%AF%86/)里面简单的介绍
 
 

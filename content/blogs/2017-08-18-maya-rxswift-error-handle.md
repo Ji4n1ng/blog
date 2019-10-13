@@ -1,12 +1,14 @@
 ---
 title: Moya + RxSwift 错误处理的问题
 date: 2017-08-18 15:15:00
-categories: iOS
-background: https://s2.ax1x.com/2019/04/23/EEGIGF.jpg
+template: post
+draft: false
+slug: "/posts/maya-rxswift-error-handle/"
+category: "Development"
 tags:
-    - RxSwift
-    - Swift
-    - iOS
+   - "Swift"
+   - "iOS"
+background: https://s2.ax1x.com/2019/04/23/EEGIGF.jpg
 ---
 
 ## 前言

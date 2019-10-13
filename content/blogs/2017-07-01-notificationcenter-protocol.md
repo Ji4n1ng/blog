@@ -1,11 +1,14 @@
 ---
 title: NotificationCenter Protocol 以及伪 ViewModel 实战
 date: 2017-07-01 13:57:00
-background: https://s2.ax1x.com/2019/04/23/EEGUbt.jpg
-categories: iOS
+template: post
+draft: false
+slug: "/posts/notificationcenter-protocol/"
+category: "Development"
 tags:
-    - Swift
-    - iOS
+   - "Swift"
+   - "iOS"
+background: https://s2.ax1x.com/2019/04/23/EEGUbt.jpg
 ---
 
 ## 前言
@@ -33,7 +36,6 @@ NotificationCenter Protocol 乍一看很别扭, 这明明是两种设计模式. 
 这是比较 `Hard Code` 的方式, 在开发过程中难以用 Xcode 自动补齐.
 
 那么, 如何进行改造 NotificationCenter, 国外这篇[博客](https://medium.com/swift-programming/swift-nsnotificationcenter-protocol-c527e67d93a1#.4zto25k8j)写的非常好, 而且 SwiftGG 也翻译了[这篇文章](http://swift.gg/2017/04/13/swift-nsnotificationcenter-protocol/), 我就不再写一遍了, 大家可以看一看作者的 [playground](https://github.com/andyyhope/Blog_NSNotificationCenterProtocol/).
-
 代码如下：
 
 ```swift

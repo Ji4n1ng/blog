@@ -7,7 +7,8 @@ const Header = ({ siteTitle }) => (
     <Link to="/" id="logo"><img alt="logo" src={require('../../content/assets/logo_white.png')} /></Link>
     <ul>
       <li><Link to="/"><button>Home</button></Link></li>
-      <li><Link to="/about"><button>About</button></Link></li>
+      <li><Link to="/pages/about"><button>About</button></Link></li>
+      <li><Link to="/pages/projects"><button>Projects</button></Link></li>
       <li><Link to="/blog"><button>Blog</button></Link></li>
     </ul>
   </div>

@@ -1,12 +1,14 @@
 ---
 title: RxSwift 利用双向绑定实现 ControlProperty 可观察程序性更改
 date: 2017-09-04 11:00:00
-categories: iOS
-background: https://s2.ax1x.com/2019/04/23/EEGs2Q.jpg
+template: post
+draft: false
+slug: "/posts/rxswift-controlproperty/"
+category: "Development"
 tags:
-    - RxSwift
-    - iOS
-    - Swift
+   - "Swift"
+   - "iOS"
+background: https://s2.ax1x.com/2019/04/23/EEGs2Q.jpg
 ---
 
 ## 前言

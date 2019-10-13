@@ -31,8 +31,8 @@ class BlogIndex extends React.Component {
             <img alt="logo" src={require('../../content/assets/logo_purple.png')}/>
             <Paragraph
               title="Nice to meet you!"
-              text={["Hi, I’m Jianing, a fan of Apple.",<br/>,
-              "I am an iOS developer and also do some web development. Not good at talking, I prefer to be immersed in my own world and program with music. Because of Apple, I started to like beautifully designed things."]}
+              text={["Hi, I’m Jianing born and raised in China.",<br/>,
+              "I have studied iOS development in the past and now I'm pursuing my master's degree in computer security. Not good at talking, I prefer to be immersed in my own world and program with music. I'm a fan of Apple. Because of Apple, I started to like beautifully designed things."]}
               titleStyle={{color: 'black'}}
               textStyle={{color: 'black'}} /> 
             <p className="email">You can contact me by email</p>
@@ -48,7 +48,7 @@ class BlogIndex extends React.Component {
           <div className="MiddleSection">
             <Paragraph
               title="Dedicated to becoming a T-type talent"
-              text="T-type means that someone has a wide range of technologies and is specialized in a certain field. After learning iOS development for a period of time, I began to try to learn web-side development and some other technologies."
+              text="T-type means that someone has a wide range of technologies and is specialized in a certain field. I want to write a lot of interesting programs with great technologies and also want to find the principles behind these technologies."
               titleStyle={{color: 'black'}}
               textStyle={{color: 'black'}} /> 
             <div className="LogoGroup">

@@ -1,10 +1,13 @@
 ---
 title: 树莓派 + OpenWrt 打造无线路由科学上网
 date: 2018-09-10 20:00:00
-categories: Tips
-background: https://s2.ax1x.com/2019/04/23/EEGNDI.jpg
+template: post
+draft: false
+slug: "/posts/raspberry-openwrt/"
+category: "Tips"
 tags:
-    - Raspberry
+   - "Raspberry"
+background: https://s2.ax1x.com/2019/04/23/EEGNDI.jpg
 ---
 
 ## 前言

@@ -1,11 +1,13 @@
 ---
 title: 利用 OpenGL 绘制海绵宝宝
 date: 2017-04-07 12:00:00
-categories: iOS
-background: https://s2.ax1x.com/2019/04/23/EEGdVP.jpg
+template: post
+draft: false
+slug: "/posts/opengl-spongebob/"
+category: "Development"
 tags:
-    - OpenCV
-    - iOS
+   - "OpenGL"
+background: https://s2.ax1x.com/2019/04/23/EEGdVP.jpg
 ---
 
 ## 前言
