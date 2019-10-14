@@ -16,7 +16,7 @@ background: https://s2.ax1x.com/2019/04/23/EEGNDI.jpg
 
 <!--more-->
 
-为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 Http Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能科学上网的路由器就成了激活这半块砖的关键道具。
+为了尝鲜 Android P 正式版(9.0.0 PPR1.180610.011, Aug 2018, Telstra)，用 Bootloader 刷完之后第一次进系统，需要输入 Google 账号来“激活”，过去我都是在 WiFi 设置界面挂个 Http Proxy 到局域网的电脑来代理，但是千算万算没想到 Android P 的正式版 Http Proxy 功能挂了（事后经测试只有激活界面的 Http Proxy 挂了，进入系统后功能正常，[BUG Report](https://issuetracker.google.com/issues/113304614) 已经提交给 Google 了）。所以一个能访问 Google 的路由器就成了激活这半块砖的关键道具。
 
 > 后记：Google 回应已经解决了。大概是这么个流程，
 > - 普通用户（我）：你的 X 有 BUG。
@@ -75,7 +75,7 @@ $ vi /etc/config/network
 
 输入命令 `reboot` 重启路由器。将连接电脑和树莓派的网线断开，把带有网络的网线插入树莓派的网口。
 
-## 给树莓派安装科学上网软件
+## 给树莓派安装软件
 
 重启好后，电脑连接树莓派所发出的无线网络，默认名称 LEDE 没有密码，如果你修改过，则相应的填入即可。此时就可以访问国内网站了。
 
@@ -133,7 +133,7 @@ opkg install luci-app-shadowvpn
 
 ### 方法二 通过 scp 手动上传 
 
-我们所需要的科学上网软件和后面所提到的 DNS 软件等，都是由 [aa65535](https://github.com/aa65535) 大佬提供的。
+我们所需要的上网软件和后面所提到的 DNS 软件等，都是由 [aa65535](https://github.com/aa65535) 大佬提供的。
 
 这里将使用 scp 命令将 $$ 软件上传到树莓派。执行以下命令来安装。
 
@@ -141,11 +141,11 @@ opkg install luci-app-shadowvpn
 $ opkg install xxx.ipk
 ```
 
-刷新页面，然后 Service 里面会出现新的科学上网选项，进入相应页面后，先在 Server 管理里面输入填入你所设置的科学上网账号。然后在基本设置里，将透明代理中的服务器设置为你刚填好的服务器，保存应用即可。刷新页面，如果透明代理变为运行中即可。
+刷新页面，然后 Service 里面会出现新的上网选项，进入相应页面后，先在 Server 管理里面输入填入你所设置的上网账号。然后在基本设置里，将透明代理中的服务器设置为你刚填好的服务器，保存应用即可。刷新页面，如果透明代理变为运行中即可。
 
 ## 树莓派 DNS 设置
 
-如果你现在可以科学上网了，恭喜你。如果没有，说明可能存在 DNS 污染等问题，你完成的工作只有一半。具体的 DNS 设置请参考 [飞羽博客](https://cokebar.info/archives/664) DNS 配置部分，写的非常详细，我也不再照搬一遍了。
+如果你现在可以访问 Google 了，恭喜你。如果没有，说明可能存在 DNS 污染等问题，你完成的工作只有一半。具体的 DNS 设置请参考 [飞羽博客](https://cokebar.info/archives/664) DNS 配置部分，写的非常详细，我也不再照搬一遍了。
 
 
 
