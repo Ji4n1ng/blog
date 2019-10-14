@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
             <img alt="logo" src={require('../../content/assets/logo_purple.png')}/>
             <Paragraph
               title="Nice to meet you!"
-              text={["Hi, I’m Jianing born and raised in China.",<br/>,
+              text={["Hi, I’m Jianing.",<br/>,
               "I have studied iOS development in the past and now I'm pursuing my master's degree in computer security. Not good at talking, I prefer to be immersed in my own world and program with music. I'm a fan of Apple. Because of Apple, I started to like beautifully designed things."]}
               titleStyle={{color: 'black'}}
               textStyle={{color: 'black'}} /> 

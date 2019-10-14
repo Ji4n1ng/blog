@@ -67,10 +67,14 @@ button {
     .Header ul {
         top: 10px;
     }
+
+    .Header button {
+        padding: 10px 10px;
+    }
 }
 
 @media (max-width: 480px) {
-    .Header ul {
-        left: 20px;
+    .Header button {
+        padding: 5px 5px;
     }
 }

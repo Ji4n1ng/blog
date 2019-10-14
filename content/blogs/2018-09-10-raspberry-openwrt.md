@@ -1,5 +1,5 @@
 ---
-title: 树莓派 + OpenWrt 打造无线路由科学上网
+title: 树莓派 + OpenWrt 打造无线路由器
 date: 2018-09-10 20:00:00
 template: post
 draft: false
